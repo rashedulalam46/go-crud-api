@@ -42,4 +42,23 @@ go run ./cmd
 
 Server will start on: http://localhost:8080
 
+## 🚀 API Endpoints
+
+| Action        | Method | URL               | Body (JSON)                   |
+| ------------- | ------ | ----------------- | ----------------------------- |
+| Create User   | POST   | `/create`         | `{ "name": "Alice" }`         |
+| Get All Users | GET    | `/users`          | None                          |
+| Get User      | GET    | `/user?id=<id>`   | None                          |
+| Update User   | PUT    | `/update?id=<id>` | `{ "name": "Alice Updated" }` |
+| Delete User   | DELETE | `/delete?id=<id>` | None                          |
+
+
+
+## 🛠 Features
+- Clean folder architecture (cmd, internal/service, internal/handler, internal/storage)
+- Generic in-memory storage using Go generics
+- Full CRUD operations (Create, Read, Update, Delete)
+- Ready to extend with real database
+
+
 
