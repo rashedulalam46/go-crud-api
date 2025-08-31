@@ -18,6 +18,6 @@ func main() {
 	http.HandleFunc("/update", handler.UpdateUser)
 	http.HandleFunc("/delete", handler.DeleteUser)
 
-	fmt.Println("🚀 Server running at http://localhost:8080")
+	fmt.Println("Server running at http://localhost:8080")
 	http.ListenAndServe(":8080", nil)
 }
