@@ -6,6 +6,7 @@ This project demonstrates a layered approach with **handlers, services, and gene
 ---
 
 ## 📂 Project Structure
+```
 GoCrudApi/
 ├── cmd/
 │ └── main.go # Entry point
@@ -19,9 +20,7 @@ GoCrudApi/
 ├── go.mod
 └── go.sum
 
-
----
-
+```
 ## ⚙️ Setup
 
 ### 1. Clone the project
