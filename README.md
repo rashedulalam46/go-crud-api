@@ -26,15 +26,19 @@ GoCrudApi/
 
 ### 1. Clone the project
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/rashedulalam46/go-crud-api.git
 cd GoCrudApi
+```
 
 ### 2. Initialize dependencies
 ```bash
 go mod tidy
+```
 
 ### 3. Run the API
+```bash
 go run ./cmd
+```
 
 Server will start on: http://localhost:8080
 
