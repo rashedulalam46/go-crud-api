@@ -6,5 +6,36 @@ This project demonstrates a layered approach with **handlers, services, and gene
 ---
 
 ## 📂 Project Structure
+GoCrudApi/
+├── cmd/
+│ └── main.go # Entry point
+├── internal/
+│ ├── storage/
+│ │ └── memory.go # Generic in-memory storage
+│ └── user/
+│ ├── handler.go # HTTP handlers
+│ ├── model.go # User model
+│ └── service.go # Business logic
+├── go.mod
+└── go.sum
+
+
+---
+
+## ⚙️ Setup
+
+### 1. Clone the project
+```bash
+git clone <your-repo-url>
+cd GoCrudApi
+
+### 2. Initialize dependencies
+```bash
+go mod tidy
+
+### 3. Run the API
+go run ./cmd
+
+Server will start on: http://localhost:8080
 
 
