@@ -12,6 +12,8 @@ func NewService(store *storage.MemoryStore[User]) *Service {
 
 
 
+
+
 func (s *Service) Create(name string) User {
 	u := User{ID: s.store.NextID, Name: name}
 	items := s.store.GetAll()
